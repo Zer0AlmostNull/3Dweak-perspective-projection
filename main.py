@@ -101,7 +101,7 @@ while True:
 
     # rotate points
     verticies = rotate_y(verticies, pi/4*deltaTime)
-    #verticies = rotate_x(verticies, pi/3*deltaTime)
+    verticies = rotate_x(verticies, pi/3*deltaTime)
     #verticies = rotate_z(verticies, pi/2*deltaTime)
 
 
@@ -112,5 +112,5 @@ while True:
     screen.fill((0,0,0))
 
     # tick the clock - fps control
-    deltaTime = (clock.tick(1000)/1000)
+    deltaTime = (clock.tick(0)/1000)
     
